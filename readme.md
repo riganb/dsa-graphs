@@ -49,14 +49,72 @@ Note: If the weights for a graph's edges is not given, but we require them for s
 
 ### A few more definitions related to graphs:
 
-**Node**: entity to store data
-
-**Edge**: to represent connections between nodes
-
-**Degree(v)**: in case of undirected graph, degree of node v is the number of edges connected to v
-
-**Indegree(v)**: in case of directed graph, number of edges coming towards node v
-
-**Outdegree(v)**: in case of directed graph, number of edges coming out of node v
-
+**Node**: entity to store data<br>
+**Edge**: to represent connections between nodes<br>
+**Degree(v)**: in case of undirected graph, degree of node v is the number of edges connected to v<br>
+**Indegree(v)**: in case of directed graph, number of edges coming towards node v<br>
+**Outdegree(v)**: in case of directed graph, number of edges coming out of node v<br>
 **Path**: sequence of nodes where any node occurs no more than once
+
+### Ways to represent graphs in code:
+1. *Adjacency Matrix*
+2. *Adjacency List*
+
+The data we are usually provided in graph-based questions (specifics may vary question to question and platform to platform):
+*n* -> the number of nodes<br>
+*m* -> the number of edges<br>
+*E* -> the list of edges
+
+1. **Adjacency Matrix**:
+
+Suppose, for an example:
+n = 3, m = 3, and E = {0 -> 1, 1 -> 2, 2 -> 0}
+
+```mermaid
+flowchart LR
+    0 --> 1
+    1 --> 2
+    2 --> 0
+```
+
+Now, based on the information, we need to create a 2D matrix as follows:
+
+|Start\End|0|1|2|
+|-|-|-|-|
+|0|0|1|0|
+|1|0|0|1|
+|2|1|0|0|
+
+Space Complexity of the matrix: O(n<sup>2</sup>)
+
+2. **Adjacency List**:
+
+As the graph grows bigger, we realise that most of it is filled with zeros and the matrix turns sparse. To counter the wasted space, we use adjacency lists.
+
+Suppose, for an example, we have the following graph:
+```mermaid
+flowchart LR
+    0 --- 1
+    0 --- 4
+    1 --- 2
+    1 --- 3
+    2 --- 3
+    3 --- 4
+```
+
+Here, n = 5, m = 6, and E = {0 -- 1, 0 -- 4, 1 -- 2, 1 -- 3, 2 -- 3, 3 -- 4}
+
+Thus, adjacency lists formed would be:
+|Nodes|Connected to|
+|-|-|
+|0|1, 4|
+|1|0, 2, 3|
+|2|1, 3|
+|3|1, 2, 4|
+|4|0, 3|
+
+#### Possible implementations:
+
+- List of lists
+- Map (Key -> Int/Node, Value -> List of Ints/Nodes) (Preferred due to list restrictions)
+
