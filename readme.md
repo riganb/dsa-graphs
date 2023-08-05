@@ -1,5 +1,8 @@
 ## Graphs
 
+#### Conventions followed:
+- All the code files have sample input and expected output at the bottom of the file.
+
 A graph is a set of nodes and edges connecting the nodes.
 
 ### There are multiple types of graphs:
@@ -118,3 +121,4 @@ Thus, adjacency lists formed would be:
 - List of lists
 - Map (Key -> Int/Node, Value -> List of Ints/Nodes) (Preferred due to list restrictions)
 
+> Generic Graph Implementation (Printing Adjacency Lists): *1_generic_graph.py*
