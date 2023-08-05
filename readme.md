@@ -121,4 +121,4 @@ Thus, adjacency lists formed would be:
 - List of lists
 - Map (Key -> Int/Node, Value -> List of Ints/Nodes) (Preferred due to list restrictions)
 
-> Generic Graph Implementation (Printing Adjacency Lists): [*1_generic_graph.py*](1_generic_graph.py)
+> Generic Graph Implementation (Printing Adjacency Lists): [*1_generic_graph.py*](source/1_generic_graph.py)
