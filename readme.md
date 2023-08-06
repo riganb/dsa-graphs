@@ -122,3 +122,5 @@ Thus, adjacency lists formed would be:
 - Map (Key -> Int/Node, Value -> List of Ints/Nodes) (Preferred due to list restrictions)
 
 > Generic Graph Implementation (Printing Adjacency Lists): [*1_generic_graph.py*](source/1_generic_graph.py)
+
+> Python solution to [**Code Studio problem**](https://www.codingninjas.com/studio/problems/create-a-graph-and-print-it_1214551?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar): [*1_solution.py*](source/1_solution.py)
