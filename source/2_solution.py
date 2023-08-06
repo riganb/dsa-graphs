@@ -28,13 +28,14 @@ def BFS(vertex, edges):
             adj_lists[i] = list()
 
     Q.append(0)
+    visited[0] = True
     
     while len(Q) > 0:
         currentNode = Q.pop(0)
-        visited[currentNode] = True
         bfs_nodes.append(currentNode)
         for v in adj_lists[currentNode]:
-            if not visited[v] and v not in Q:
+            if not visited[v]:
                 Q.append(v)
+                visited[v] = True
     
     return bfs_nodes
