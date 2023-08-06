@@ -123,4 +123,6 @@ Thus, adjacency lists formed would be:
 
 > Generic Graph Implementation (Printing Adjacency Lists): [*1_generic_graph.py*](source/1_generic_graph.py)
 
-> Python solution to [**Code Studio problem**](https://www.codingninjas.com/studio/problems/create-a-graph-and-print-it_1214551?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar): [*1_solution.py*](source/1_solution.py)
+> Python solution to [**Code Studio problem**](https://www.codingninjas.com/studio/problems/create-a-graph-and-print-it_1214551?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar): [*1_solution.py*](source/1_solution.py) - Generating Adjacency Lists
+
+> Python solution to [**Code Studio problem**](https://www.codingninjas.com/studio/problems/bfs-in-graph_973002?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar): [*2_solution.py*](source/2_solution.py) - Breadth First Search, aka BFS
